@@ -79,6 +79,7 @@ body {
 .aboutme {
  color: #000; 
  text-align: center;  
+ padding-top: 150px;
 }
 
 
@@ -130,7 +131,8 @@ hr {
 
 .box2 {
     display: inline-block;
-    width: 40%;
+    width: 50%;
+    max-width: 600px;
     background-color: #ffffff;
     color: #000;
     margin: 10px; /* Add some margin between boxes */
