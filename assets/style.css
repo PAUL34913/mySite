@@ -65,10 +65,16 @@ body {
     width: 100%; /* Adjust width as needed */
 }
 
+.navbar {
+    background-color: #000;
+    height: 50px;
+}
+
 .aboutme {
  color: #000; 
  text-align: center;  
 }
+
 
 .myphoto-container {
     display: flex;
@@ -171,7 +177,7 @@ hr {
 }
 
 .footer {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -181,6 +187,9 @@ hr {
 .footer p {
     margin: 0;
 }
-.hellobox {
-    background-color: #000;
+.navbar {
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    text-indent: 5%;
 }
