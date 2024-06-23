@@ -1,0 +1,27 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto; /* Center the container */
+    margin-top: 200px;
+    text-align: center; /* Align text left within the container */
+    padding: 20px; /* Example padding */
+    padding-top: 100px;
+    outline: 1px solid black;
+}
+
+#num1, #num2 {
+    width: 50px;
+    text-align: right;
+}
