@@ -241,3 +241,10 @@ hr {
         transform: translateX(-50%); /* Offset by half of its width */
     }
     
+    .header-paragraph {
+        padding-top: 0px;
+    }
+
+    .header {
+        height: 100vh;
+    }
