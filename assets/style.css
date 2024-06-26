@@ -163,9 +163,10 @@ body, html {
   height: 50vh;
   width: 50vw;
   margin: 0 18px; /* Adjust horizontal margin */
+  margin-top: 20px;
   outline: 0.5px solid rgb(173, 173, 173);
   padding: 20px;
-  font-size: 2vw;
+  font-size:1.5vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -174,21 +175,61 @@ body, html {
 
 .welcard1 {
   color: #ff0000;
+  background-color: rgb(169, 169, 169);
 }
 
 .welcard2 {
   color: #000000;
+  background-color: #ff0000;
 }
 
 .welcard3 {
   color: #ffffff;
-    background-color: white;
-    -webkit-text-stroke: 1px rgb(0, 0, 0); /* For Safari/Chrome */
-    text-stroke: 1px rgb(0, 0, 0); /* Standard syntax */
+  background-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* For Safari/Chrome */
+  text-stroke: 0.5px rgb(0, 0, 0); /* Standard syntax */
 }
 
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55vh;
+}
 
+.welcome .welcard1,
+.welcome .welcard2,
+.welcome .welcard3 {
+  flex: 1;
+  height: 50vh;
+  width: 50vw;
+  margin: 0 18px; /* Adjust horizontal margin */
+  margin-top: 20px;
+  outline: 0.5px solid rgb(173, 173, 173);
+  padding: 20px;
+  font-size:1.5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.welcard1 {
+  color: #ff0000;
+  background-color: rgb(169, 169, 169);
+}
+
+.welcard2 {
+  color: #000000;
+  background-color: #ff0000;
+}
+
+.welcard3 {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* For Safari/Chrome */
+  text-stroke: 0.5px rgb(0, 0, 0); /* Standard syntax */
+}
 @media (max-width: 1400px) {
 body, html {
   margin: 0;
@@ -218,6 +259,87 @@ body, html {
 .headerlogo, .hero {
   max-width: 100%;
   max-height: 100%;
+}
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55vh;
+}
+
+.welcome .welcard1,
+.welcome .welcard2,
+.welcome .welcard3 {
+  flex: 1;
+  height: 50vh;
+  width: 50vw;
+  margin: 0 18px; /* Adjust horizontal margin */
+  margin-top: 20px;
+  outline: 0.5px solid rgb(173, 173, 173);
+  padding: 20px;
+  font-size:1.5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcard1 {
+  color: #ff0000;
+  background-color: rgb(169, 169, 169);
+}
+
+.welcard2 {
+  color: #000000;
+  background-color: #ff0000;
+}
+
+.welcard3 {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* For Safari/Chrome */
+  text-stroke: 0.5px rgb(0, 0, 0); /* Standard syntax */
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55vh;
+}
+
+.welcome .welcard1,
+.welcome .welcard2,
+.welcome .welcard3 {
+  flex: 1;
+  height: 50vh;
+  width: 50vw;
+  margin: 0 18px; /* Adjust horizontal margin */
+  margin-top: 20px;
+  outline: 0.5px solid rgb(173, 173, 173);
+  padding: 20px;
+  font-size:1.5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcard1 {
+  color: #ff0000;
+  background-color: rgb(169, 169, 169);
+}
+
+.welcard2 {
+  color: #000000;
+  background-color: #ff0000;
+}
+
+.welcard3 {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* For Safari/Chrome */
+  text-stroke: 0.5px rgb(0, 0, 0); /* Standard syntax */
 }
 }
 
@@ -249,54 +371,30 @@ body, html {
     width: 100vw;
   }
 
-  /* Welcome Section */
-  .welcome {
-    display: flex; /* Ensure the container uses flexbox */
-    flex-direction: column;
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    height: 100vh;
-    padding-top: 290px;
-  }
+/* Welcome Section */
+.welcome {
+  display: flex; /* Ensure the container uses flexbox */
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  height: 1000px; /* Adjusted height */
+}
 
-  .welcome .welcard1,
-  .welcome .welcard2,
-  .welcome .welcard3 {
-    width: 93vw;
-    height: 50vh;
-    margin: 0px auto;
-    margin-top: 20px;
-    outline: 0.5px solid rgb(173, 173, 173);
-    padding-top: 100px; /* card height */
-    padding-bottom: 100px; /* card height */
-    font-size: 2rem;
+.welcome .welcard1,
+.welcome .welcard2,
+.welcome .welcard3 {
+  width: 93vw;
+  height: 100px;
+  margin: 0px auto; /* Adjusted margin */
+  margin-top: 20px;
+  outline: 0.5px solid rgb(173, 173, 173);
+  font-size: 5vw;
+  text-align: center; /* Center text horizontally */
+  flex-direction: column; /* Ensure vertical centering */
+  justify-content: center; /* Ensure vertical centering */
+}
 
-    text-align: center; /* Center text horizontally */
-    display: flex; /* Ensure vertical centering */
-    flex-direction: column; /* Ensure vertical centering */
-    justify-content: center; /* Ensure vertical centering */
-  }
 
-  .welcard1 {
-    color: #ff0000;
-    background-color: white;
-  }
-
-  .welcard2 {
-    color: #000000;
-    background-color: white
-  }
-
-  .welcard3 {
-    color: #ffffff;
-    background-color: white;
-    -webkit-text-stroke: 1px rgb(0, 0, 0); /* For Safari/Chrome */
-    text-stroke: 1px rgb(0, 0, 0); /* Standard syntax */
-  }
-
-  .headbar {
-    margin-bottom: 20px;
-  }
 }
 
 
