@@ -30,8 +30,16 @@ a {
   outline: none;
 }
 
+.mobweltxt {
+  display: none;
+}
+
 p {
   font-size: 14px;
+}
+
+.container {
+  padding-bottom: 40px;
 }
 
 /* Wrapper to handle the margin */
@@ -112,7 +120,7 @@ body, html {
 .header {
   display: flex;
   width: 100%;
-  height: 100vh; /* Adjust as needed */
+  height: 50vw; /* Adjust as needed */
 }
 
 .headerleft, .headerright {
@@ -142,7 +150,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 30px;
+  height: 20px;
   background-color: #ff0000; /* Navbar background color */
   color: rgb(0, 0, 0); /* Navbar text color */
   outline: 0.5px solid rgb(59, 59, 59);
@@ -177,7 +185,8 @@ body, html {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  height: 40vh;
+  height: 25vw;
+  max-height: 400px;
   margin-top: 20px;
   outline: 0.5px solid rgb(173, 173, 173);
   padding: 20px;
@@ -266,37 +275,9 @@ body, html {
   background-color: rgb(255, 255, 255);
 }
 
-@media (max-width: 1200px) {
-  .welcome {
-    height: 250px;
-  }
 
-  .welcome .welcard1,
-  .welcome .welcard2,
-  .welcome .welcard3 {
-    height: 200px;
-    width: 50vw;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 1.5vw;
-  }
-}
 
-@media (max-width: 600px) {
-  .welcome {
-    flex-direction: column; /* Stack cards vertically on small screens */
-    height: auto; /* Adjust height */
-  }
 
-  .welcome .welcard1,
-  .welcome .welcard2,
-  .welcome .welcard3 {
-    width: 93vw;
-    height: 100px;
-    margin: 20px 0; /* Adjust margins for vertical stacking */
-    font-size: 5vw;
-  }
-}
 
 
 @media (max-width: 1024px) {
@@ -309,7 +290,7 @@ body, html {
   .header {
       display: flex;
       width: 100%;
-      height: 50vh; /* Adjust as needed */
+      height: 25vh50vh; /* Adjust as needed */
   }
   .headerleft, .headerright {
       width: 50%;
@@ -329,57 +310,24 @@ body, html {
       max-width: 100%;
       max-height: 100%;
   }
-  .welcome {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      height: 250px;
+
+  .header {
+    width: 100%;
   }
+
+  .welcome {
+    width: 96%;
+  }
+
   .welcome .welcard1,
   .welcome .welcard2,
   .welcome .welcard3 {
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      height: 200px;
-      width: 50vw;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      outline: 0.5px solid rgb(173, 173, 173);
-      padding: 20px;
-      font-size: 1.5vw;
-      text-align: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+    height: 30vw;
+    font-size: 1.5vw;
   }
-  .welcard1 {
-      color: #ff0000;
-      background-color: rgb(169, 169, 169);
-  }
-  .welcard2 {
-      color: #000000;
-      background-color: #ff0000;
-  }
-  .welcard3 {
-      color: #ffffff;
-      background-color: rgb(0, 0, 0);
-      -webkit-text-stroke: 0.5px rgb(0, 0, 0); 
+
+  .txtwelcome {
+    width: 96%;
   }
 }
 
@@ -411,31 +359,46 @@ body, html {
     width: 100vw;
   }
 
-/* Welcome Section */
-.welcome {
-  display: flex; /* Ensure the container uses flexbox */
-  flex-direction: column;
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  height: 1000px; /* Adjusted height */
+
+    .welcome {
+      flex-direction: column; /* Stack cards vertically on small screens */
+      height: auto; /* Adjust height */
+    }
+
+  /* Welcome Section */
+
+  .mobweltxt {
+    display: initial;
+    width: 97%;
+  }
+  .welcome {
+    display: flex; /* Ensure the container uses flexbox */
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Adjusted height */
+    text-align: justify;
+    padding-bottom: 50px;
+  }
+
+  .welcome .welcard1,
+  .welcome .welcard2,
+  .welcome .welcard3 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 93vw;
+    margin: 0px auto; /* Adjusted margin */
+    margin-top: 20px;
+    outline: 0.5px solid rgb(173, 173, 173);
+    font-size: 5vw;
+    text-align: center; /* Center text horizontally */
+    flex-direction: column; /* Ensure vertical centering */
+    justify-content: center; /* Ensure vertical centering */
+  }
+
+  .txtwelcome {
+    display: none;
+    text-align: justify;
+  }
 }
-
-.welcome .welcard1,
-.welcome .welcard2,
-.welcome .welcard3 {
-  width: 93vw;
-  height: 100px;
-  margin: 0px auto; /* Adjusted margin */
-  margin-top: 20px;
-  outline: 0.5px solid rgb(173, 173, 173);
-  font-size: 5vw;
-  text-align: center; /* Center text horizontally */
-  flex-direction: column; /* Ensure vertical centering */
-  justify-content: center; /* Ensure vertical centering */
-}
-
-
-}
-
-
 
