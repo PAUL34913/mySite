@@ -39,7 +39,7 @@ p {
 }
 
 .container {
-  padding-bottom: 40px;
+
 }
 
 /* Wrapper to handle the margin */
@@ -158,7 +158,7 @@ body, html {
   align-items: center;
   justify-content: space-between; /* Ensures logo and links are spaced evenly */
   padding: 10px 20px;
-  z-index: 1000; /* Ensures the navbar stays above other content */
+  z-index: 0; /* Ensures the navbar stays above other content */
 }
 
 /* Welcome Section - Full Screen */
@@ -190,6 +190,7 @@ body, html {
   margin-top: 20px;
   outline: 0.5px solid rgb(173, 173, 173);
   padding: 20px;
+  padding-bottom: 40px;
   font-size: 1vw;
   text-align: center;
   display: -webkit-box;
@@ -231,11 +232,12 @@ body, html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; /* Center items horizontally */
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; /* Center items vertically */
+  -webkit-box-align: top;
+  -ms-flex-align: top;
+  align-items: top; /* Center items vertically */
   text-align: justify;
   gap: 18px; /* Adjust gap between cards */
+  padding-bottom: 20px;
 }
 
 .txtwelcome .txtwelcard1,
@@ -244,10 +246,9 @@ body, html {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  height: 200px;
+  height: auto;
   text-align: justify; /* Set text alignment to left */
   margin-top: 20px;
-  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,10 +276,37 @@ body, html {
   background-color: rgb(255, 255, 255);
 }
 
+.footer {
+  position: relative; /* Positioned after the content */
+  width: 100%;
+  height: 20px; /* Adjust height as needed */
+  background-color: #000000; /* Navbar background color */
+  color: rgb(255, 255, 255); /* Navbar text color */
+  outline: 0.5px solid rgb(59, 59, 59);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures left and right content are spaced evenly */
+  padding: 10px 20px;
+  z-index: 1; /* Ensures the footer stays above other content */
+  font-weight: normal;
+  font-size: 10px;
+}
 
+.footer p {
+  margin: 0; /* Remove default margin for paragraphs */
+}
 
+.footer-left {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
 
+.footer-right {
+  flex: 1;
+  text-align: right; /* Align text to the right */
+}
 
+/* Ipads -*/
 
 @media (max-width: 1024px) {
   body, html {
@@ -290,7 +318,7 @@ body, html {
   .header {
       display: flex;
       width: 100%;
-      height: 25vh50vh; /* Adjust as needed */
+      height: 50vh; /* Adjust as needed */
   }
   .headerleft, .headerright {
       width: 50%;
@@ -329,7 +357,16 @@ body, html {
   .txtwelcome {
     width: 96%;
   }
+
+  .footer {
+    position: relative; /* Ensure relative positioning */
+    width: 100%;
+    margin-top: 20px; /* Add margin to separate from content */
+    bottom: 0; /* Ensure it stays at the bottom of the viewport */
+  }
 }
+
+/* Mobile */
 
 @media (max-width: 600px) {
   .header {
@@ -400,5 +437,20 @@ body, html {
     display: none;
     text-align: justify;
   }
+
+  .footer {
+    
+  }
+
+  .footer-left {
+    flex: 1;
+    text-align: center; 
+  }
+
+  .footer-right {
+    display: none;
+  }
+  
+
 }
 
