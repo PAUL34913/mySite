@@ -18,6 +18,8 @@ body, html {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal; /* Ensure it's not set to 'bold' */
+  width: 100%;
+  height: 100%;
 }
 
 /* Remove underline from links */
@@ -38,9 +40,57 @@ p {
   font-size: 14px;
 }
 
-.container {
-
+/* Basic styles for the navbar */
+.navbarlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
+
+.menu-item {
+  position: relative;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: white;
+}
+
+.menu-link:hover {
+  background-color: #ffffff;
+}
+
+/* Dropdown menu styles */
+
+
+.navbar ul.navbarlist .menu-item .dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  outline: 0.5px solid grey;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+}
+
+.navbar ul.navbarlist .menu-item .dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.navbar ul.navbarlist .menu-item .dropdown li a:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
 
 /* Wrapper to handle the margin */
 .navbar-wrapper {
@@ -108,13 +158,6 @@ p {
 .navbarlogo {
   height: 20px;
   margin-top: 4px;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .header {
@@ -218,8 +261,6 @@ body, html {
 .welcard3 {
   color: #ffffff;
   background-color: rgb(0, 0, 0);
-  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* For Safari/Chrome */
-  text-stroke: 0.5px rgb(0, 0, 0); /* Standard syntax */
 }
 
 .txtwelcome {
@@ -308,7 +349,7 @@ body, html {
 
 /* Ipads -*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
   body, html {
       margin: 0;
       padding: 0;
@@ -318,7 +359,7 @@ body, html {
   .header {
       display: flex;
       width: 100%;
-      height: 50vh; /* Adjust as needed */
+      height: 50vw; /* Adjust as needed */
   }
   .headerleft, .headerright {
       width: 50%;
@@ -356,6 +397,7 @@ body, html {
 
   .txtwelcome {
     width: 96%;
+    padding-bottom: 0px;
   }
 
   .footer {
@@ -366,12 +408,35 @@ body, html {
   }
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  .welcome {
+    width: 96%;
+  }  
+
+  .txtwelcome {
+    width: 96%;
+  } 
+  
+  .header {
+      height: 92vh; /* Adjust as needed */
+    }
+
+    .headerleft {
+      width: 40%;
+    }
+
+    .headerright {
+      width: 60%;
+    }
+}
+
 /* Mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (orientation: portrait){
+
   .header {
     flex-direction: column;
-    height: 100vh;
+    height: 96vh;
   }
 
   .headerleft, .headerright {
@@ -408,6 +473,7 @@ body, html {
     display: initial;
     width: 97%;
   }
+
   .welcome {
     display: flex; /* Ensure the container uses flexbox */
     flex-direction: column;
@@ -415,7 +481,7 @@ body, html {
     align-items: center; /* Center items horizontally */
     height: auto; /* Adjusted height */
     text-align: justify;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .welcome .welcard1,
@@ -439,7 +505,7 @@ body, html {
   }
 
   .footer {
-    
+    margin-top: 0px;
   }
 
   .footer-left {
