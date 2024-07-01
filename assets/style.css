@@ -17,7 +17,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal; /* Ensure it's not set to 'bold' */
+  font-weight: normal; 
   width: 100%;
   height: 100%;
 }
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-/* Remove outline from all elements (use responsibly and customize as needed) */
+/* Remove outline from all elements */
 *:focus {
   outline: none;
 }
@@ -65,6 +65,12 @@ p {
 
 /* Dropdown menu styles */
 
+.activepage:hover {
+  color: inherit !important;
+  background-color: inherit !important;
+  text-decoration: none !important;
+  border: none !important;
+}
 
 .navbar ul.navbarlist .menu-item .dropdown {
   display: none; /* Hidden by default */
@@ -147,7 +153,7 @@ p {
 .navbar ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-weight: normal;
+
   font-size: 14px; /* Adjust font size as needed */
 }
 
