@@ -398,7 +398,7 @@ p {
   .welcome .welcard2,
   .welcome .welcard3 {
     height: 30vw;
-    font-size: 1.5vw;
+    font-size: 0.6rem;
   }
 
   .txtwelcome {
@@ -433,6 +433,13 @@ p {
 
     .headerright {
       width: 60%;
+    }
+
+    .welcome .welcard1,
+    .welcome .welcard2,
+    .welcome .welcard3 {
+      height: 30vw;
+      font-size: 0.8rem;
     }
 }
 
@@ -499,7 +506,7 @@ p {
     margin: 0px auto; /* Adjusted margin */
     margin-top: 20px;
     outline: 0.5px solid rgb(173, 173, 173);
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center; /* Center text horizontally */
     flex-direction: column; /* Ensure vertical centering */
     justify-content: center; /* Ensure vertical centering */
