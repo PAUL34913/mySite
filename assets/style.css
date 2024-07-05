@@ -213,7 +213,7 @@ p {
 /* Welcome Section - Full Screen */
 
 .welcome {
-  max-width: 800px;
+  max-width: 1200px;
   width: 80%; /* Ensure it takes up the full width */
   margin: 0 auto; /* Center the container horizontally */
   display: -webkit-box;
@@ -235,11 +235,12 @@ p {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  height: 25vh;
-  max-height: 400px;
+  height: 40vh;
+  max-height: 350px;
   margin-top: 20px;
   outline: 0.5px solid rgb(173, 173, 173);
-  padding: 20px;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
   font-size: 1vw;
   text-align: center;
   display: -webkit-box;
@@ -259,14 +260,29 @@ p {
   background-color: rgb(169, 169, 169);
 }
 
+.welcard1:hover {
+  color: #ff0000; /* Change text color on hover */
+  background-color: rgb(255, 255, 255); /* Change background color on hover */
+}
+
 .welcard2 {
   color: #000000;
   background-color: #ff0000;
 }
 
+.welcard2:hover {
+  color: #ff0000; /* Change text color on hover */
+  background-color: rgb(255, 255, 255); /* Change background color on hover */
+}
+
 .welcard3 {
   color: #ffffff;
   background-color: rgb(0, 0, 0);
+}
+
+.welcard3:hover {
+  color: #ff0000; /* Change text color on hover */
+  background-color: rgb(255, 255, 255); /* Change background color on hover */
 }
 
 .welcard4 {
@@ -433,7 +449,7 @@ p {
   .welcome .welcard2,
   .welcome .welcard3,
   .welcome .welcard4 {
-    height: 30vw;
+    height: 20vh;
     font-size: 0.6rem;
   }
 
@@ -475,7 +491,7 @@ p {
     .welcome .welcard2,
     .welcome .welcard3,
     .welcome .welcard4 {
-      height: 30vw;
+      height: 30vh;
       font-size: 0.8rem;
     }
 }
