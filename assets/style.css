@@ -235,7 +235,7 @@ p {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  height: 40vh;
+  height: 29vh;
   max-height: 350px;
   margin-top: 20px;
   outline: 0.5px solid rgb(173, 173, 173);
@@ -491,7 +491,7 @@ p {
     .welcome .welcard2,
     .welcome .welcard3,
     .welcome .welcard4 {
-      height: 30vh;
+      height: 25vh;
       font-size: 0.8rem;
     }
 }
